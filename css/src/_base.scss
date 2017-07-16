@@ -1,0 +1,92 @@
+
+
+body {
+	margin: 0;
+	@include font;
+	font-size: 16px;
+	line-height: 22px;
+	color: $grey-dark;
+	background: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include font-art-bold;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 2.2em;
+	text-transform: lowercase;
+	color: $sky;
+
+	span {
+		opacity: .7;
+	}
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+h5 {
+	font-size: 1.3em;
+}
+
+h6 {
+	font-size: 1.1em;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid $grey-light;
+	height: 0;
+	margin: 12px 0;
+}
+
+p {
+	padding: 8px 0;
+}
+
+strong, b {
+	@include font-bold;
+}
+
+a {
+	color: $sky;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+input[type=text], input[type=search], select {
+	@include font-title;
+	display: inline-block;
+	padding: 6px 12px;
+	max-width: 100%;
+	font-size: 1.2em;
+	border: 1px solid #ccc;
+}
+
+button, input[type=submit] {
+	@include font-title;
+	display: inline-block;
+	padding: 6px 20px;
+	max-width: 100%;
+	font-size: 1.2em;
+	background: $lime;
+	border: 0;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+

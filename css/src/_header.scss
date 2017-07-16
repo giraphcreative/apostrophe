@@ -1,0 +1,241 @@
+
+
+header {
+	background: $blue;
+	@include clearfix;
+	padding: 10px 0;
+
+	@include respond-to( 768px ) {
+		padding: 0;
+	}
+
+	.logo {
+		padding: 10px 20px;
+		text-align: center;
+
+		@include respond-to( 768px ) {
+			width: 230px;
+			float: left;
+			text-align: left;
+			padding: 22px 10px 22px 15px;
+		}
+
+		@include respond-to( 1024px ) {
+			width: 28%;
+			max-width: 317px;
+			padding: 28px 10px 28px 25px;
+		}
+
+		@include respond-to( 1150px ) {
+			width: 30%;
+			max-width: 358px;
+			padding: 23px 10px 23px 30px;
+		}
+	}
+
+	nav {
+		position: relative;
+
+		button {
+			display: none;
+			/*
+			position: absolute;
+			right: 10px;
+			top: -50px;
+			width: 40px;
+			height: 40px;
+			border: 0;
+			padding: 0;
+			background: white;
+			color: black;
+			background: url(../img/icon-menu.png) center center no-repeat;
+
+			@include respond-to( 600px ) {
+
+			}
+			*/
+		}
+
+		ul.nav-menu {
+			position: relative;
+
+			@include respond-to( 768px ) {
+				float: right;
+				width: 50%;
+				max-width: 450px;
+			}
+
+			@include respond-to( 840px ) {
+				float: right;
+				max-width: 475px;
+			}
+
+			@include respond-to( 1150px ) {
+				float: right;
+				max-width: 500px;
+			}
+			
+			li {
+				@include respond-to( 768px ) {				
+					display: block;
+					position: relative;
+					width: 25%;
+					float: left;
+				}
+
+				a {
+					@include font-art;
+					display: block;
+					padding: 10px;
+					font-size: 20px;
+					line-height: 31px;
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					width: 100%;
+					transition: 300ms background-color ease-in-out;
+
+					@include respond-to( 768px ) {
+						display: inline-block;
+						width: auto;
+						padding: 20px 10px;
+					}
+
+					@include respond-to( 1024px ) {
+						padding: 36px 10px;
+					}
+				}
+
+				&:hover, &.open {
+					a {
+						background-color: $orange;
+					}
+
+					ul.sub-menu {
+						display: block;
+					}
+				}
+
+				ul.sub-menu {
+					display: none;
+					margin-bottom: 3px;
+
+					@include respond-to( 768px ) {
+						position: absolute;
+						right: 0;
+						top: 60px;
+						width: 200px;
+						z-index: 2000;
+						background: lighten( $forest, 5% );
+						@include clearfix;
+					}
+
+					li {
+						display: block;
+						width: 100%;
+
+						a {
+							padding: 7px 10px;
+							font-size: 15px;
+							line-height: 18px;
+							display: block;
+
+							@include respond-to( 768px ) {
+								padding: 10px;
+
+								&:hover {
+									background: lighten( $forest, 10% );
+								}
+							}
+
+							@include respond-to( 1220px ) {
+								padding: 15px 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
+	.aux {
+		text-align: center;
+		padding: 10px;
+		position: relative;
+
+		@include respond-to( 768px ) {
+			float: right;
+			width: 20%;
+			padding: 10px;
+		}
+
+		@include respond-to( 1024px ) {
+			padding: 25px 20px 25px 15px;
+		}
+
+		@include respond-to( 1150px ) {
+			padding: 28px 30px 28px 25px;
+		}
+
+		input[type=text] {
+			display: block;
+			width: 100%;
+			padding: 7px 12px;
+			border-radius: 25px;
+			border: 2px solid white;
+			background: $blue;
+			color: white;
+			font-size: 12px;
+			line-height: 12px;
+
+			&::placeholder {
+				color: lighten( $blue, 40% );
+			}
+		}
+
+		input[type=submit] {
+			width: 32px;
+			height: 32px;
+			background: white url(../img/icon-search.png) center center no-repeat;
+			text-indent: 200px;
+			overflow: hidden;
+			border-radius: 50%;
+			padding: 0;
+			position: absolute;
+			top: 11px;
+			right: 11px;
+
+			@include respond-to( 1024px ) {
+				top: 25px;
+				right: 21px;
+			}
+
+			@include respond-to( 1150px ) {
+				top: 29px;
+				right: 32px;
+			}
+		}
+
+		.contact {
+			@include font-art;
+			margin: 8px 0;
+			background: $sky;
+			padding: 3px 12px;
+			border-radius: 10px;
+			color: white;
+			display: inline-block;
+			min-width: 40%;
+
+			@include respond-to( 768px ) {
+				width: 100%;
+			}
+
+			&:hover {
+				background: lighten( $sky, 5% );
+				text-decoration: none;
+			}
+		}
+	}
+}
+

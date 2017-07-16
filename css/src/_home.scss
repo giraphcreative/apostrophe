@@ -1,0 +1,18 @@
+
+
+.home-pad {
+	padding: 15px;
+
+	@include respond-to( 768px ) {
+		padding: 25px;
+	}
+
+	@include respond-to( 1024px ) {
+		padding: 40px 30px;
+	}
+
+	@include respond-to( 1150px ) {
+		padding: 50px 40px;
+	}
+}
+

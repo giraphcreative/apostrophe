@@ -1,0 +1,176 @@
+
+
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0 0 50px darken( $grey-light, 20% );
+}
+
+.content {
+	h1, h2, h3, h4, h5, h6 {
+		padding: 6px 0;
+	}
+}
+
+.content-style {
+	ol, ul {
+		padding: 5px 0 5px 35px;
+
+		li {
+			padding: 3px 0;
+		}
+
+		&.gform_fields {
+			padding: 5px 0;
+		}
+	}
+
+	ul {
+		list-style-type: disc;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		padding: 10px 0 5px;
+	}
+
+	blockquote {
+		padding: 10px 25px;
+		@include font;
+		font-style: italic;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		color: $grey;
+		border-left: 3px solid lighten( $grey, 25% );
+		margin: 10px 0 10px 20px;
+	}
+
+	hr {
+		border: 0;
+		border-bottom: 1px solid lighten( $grey, 25% );
+		padding: 0;
+		margin: 25px 0;
+	}
+
+	.postmeta {
+		margin-top: 15px;
+		padding: 15px 0;
+		border-top: 1px solid #ccc;
+	}
+
+	.quiet {
+		font-size: .85em;
+		color: $grey;
+
+		a {
+			color: lighten( $grey, 10% );
+		}
+	}
+}
+
+.pagination {
+	border-top: 1px solid lighten( $grey, 30% );
+	padding: 15px 0;
+	text-align: center;
+	font-size: 15px;
+	line-height: 15px;
+	background: lighten( $grey, 35% );
+	@include font;
+
+	@include respond-to( 768px ) {
+		padding: 40px 0;
+	}
+
+	a {
+		padding: 7px 12px;
+		background: $grey;
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+
+		&:hover {
+			background: lighten( $grey, 5% );
+		}
+	}
+
+	.current {
+		padding: 7px 12px;
+		display: inline-block;
+		background: lighten( $grey, 5% );
+	}
+}
+
+.content-narrow {
+	padding: 40px 20px;
+	max-width: 1024px;
+	margin: 0 auto;
+	@extend .content-style;
+}
+
+.content-wide {
+	@include clearfix;
+	@extend .content-style;
+	padding: 40px 20px;
+
+	@include respond-to( 1024px ) {
+		padding: 30px 40px 50px;
+	}
+
+	@include respond-to( 1220px ) {
+		padding: 40px 60px 60px;
+	}
+}
+
+.content-two-column {
+	@include clearfix;
+	position: relative;
+	
+	.three-quarter {
+		@extend .content-style;
+
+		@include respond-to( 1024px ) {
+			padding: 30px 25px;
+		}
+	}
+}
+
+
+.fluid-width-video-wrapper {
+	margin: 15px 0;
+}
+
+
+p.disclosure {
+	font-size: .8em;
+	color: $grey;
+}
+
+
+img {
+	&.alignleft {
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+
+	&.alignright {
+		float: right;
+		margin: 0 0 10px 10px;
+	}
+}
+
+
+table {
+	width: 100%;
+
+	tr {
+		td {
+			vertical-align: top;
+			padding: 6px 10px;
+		}
+	}
+}
+

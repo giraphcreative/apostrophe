@@ -1,0 +1,83 @@
+
+
+.icon-container {
+	text-align: center;
+
+	.icon-title {
+		@include font-art-bold;
+		padding: 10px 20px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		background: $grey-light;
+		color: $blue;
+		font-size: 1.3em;
+		width: auto;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.icon-showcase {
+		background: $grey-light;
+		@include clearfix;
+		border-radius: 20px;
+		padding: 20px;
+
+		.quarter {
+			padding: 10px 0;
+
+			@include respond-to( 768px ) {
+				padding: 10px;
+			}
+
+			@include respond-to( 1024px ) {
+				padding: 20px;
+			}
+
+			h5 {
+				font-size: 1.1em;
+				@include font-art-bold;
+			}
+
+			p {
+				color: $grey-dark;
+				font-size: .85em;
+			}
+		}
+
+		a {
+			opacity: 1;
+			transition: 300ms all ease-in-out;
+
+			h5, img, p {
+				opacity: 1;
+				transition: 300ms opacity ease-in-out;
+			}
+
+			&:hover {
+				text-decoration: none;
+				
+				h5, img, p {
+					opacity: .85;
+				}
+			}
+		}
+	}
+}
+
+
+.more {
+	@include font-art-bold;
+	font-size: 1.2em;
+	background-color: $orange;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 10px 0;
+	transition: background-color 400ms ease-in-out;
+
+	&:hover {
+		background-color: lighten( $orange, 10% );
+	}
+}
+

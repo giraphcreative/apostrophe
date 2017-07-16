@@ -1,0 +1,34 @@
+
+
+// set colors
+$lime: #81C341;
+$forest: #365F3C;
+$grey: #9C9FA0;
+$grey-dark: darken( $grey, 30% );
+$grey-light: #E6E7E8;
+$blue: #3C6B90;
+$sky: #629EBB;
+$orange: #F39C12;
+
+// link color
+$link-color: $forest;
+
+
+.bg-lime { background-color: $lime; color: white; }
+.bg-forest { background-color: $forest; color: white; }
+.bg-grey-light { background-color: $grey-light; color: white; }
+.bg-grey { background-color: $grey; color: white; }
+.bg-grey-dark { background-color: $grey-dark; color: white; }
+.bg-blue { background-color: $blue; color: white; }
+.bg-sky { background-color: $sky; color: white; }
+.bg-orange { background-color: $orange; color: white; }
+
+.text-lime { color: $lime; }
+.text-forest { color: $forest; }
+.text-grey-light { color: $grey-light; }
+.text-grey { color: $grey; }
+.text-grey-dark { color: darken( $grey, 30% ); }
+.text-blue { color: $blue; }
+.text-sky { color: $sky; }
+.text-orange { color: $orange; }
+

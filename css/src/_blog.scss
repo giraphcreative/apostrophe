@@ -1,0 +1,16 @@
+
+
+.post {
+	text-align: center;
+
+	h3 {
+		@include font-art-bold;
+		font-size: 1.4em;
+		color: black;
+
+		a {
+			color: black;
+		}
+	}
+}
+

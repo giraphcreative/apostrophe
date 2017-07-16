@@ -1,0 +1,80 @@
+
+
+footer {
+	background: $sky;
+	color: white;
+	padding: 0 0 30px;
+	@include clearfix;
+
+	@include respond-to( 1024px ) {
+		padding: 25px 15px 30px;
+	}
+
+	@include respond-to( 1150px ) {
+		padding: 30px 20px 35px;
+	}
+
+	.column {
+		padding: 20px;
+
+		@include respond-to( 600px ) {
+			float: left;
+			width: 50%;
+			margin: 0;
+			padding: 0 20px;
+
+			&.first {
+				width: 50%;
+				padding-right: 30px;
+			}
+
+			&.last {
+				width: 50%;
+				padding-left: 30px;
+				float: right;
+				text-align: right;
+			}
+		}
+
+		@include respond-to( 1024px ) {
+			width: 20%;
+			min-height: 110px;
+			
+			&.last {
+				width: 40%;
+			}
+		}
+
+		ul {
+			li {
+				a {
+					display: block;
+					color: white;
+				}
+			}
+		}
+	}
+
+	p {
+		padding: 0;
+	}
+}
+
+
+.colophon {
+	@include clearfix;
+	
+	.third {
+		@include font;
+		font-size: .7em;
+
+		&.links {
+			font-size: 1em;
+		}
+	}
+
+	img {
+		max-width: 30%;
+	}
+}
+
