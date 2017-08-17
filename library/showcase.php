@@ -106,7 +106,7 @@ function the_icon_showcase() {
 		if ( !empty( $icons[0]['image'] ) && !empty( $icons[0]['title'] ) ) { ?>
 		<div class="quarter">
 			<a href="<?php print $icons[0]['link']; ?>">
-				<img src="<?php print $icons[0]['image']; ?>" style="max-width: 120px">
+				<img src="<?php print $icons[0]['image']; ?>" style="max-width: 140px">
 				<h5><?php print $icons[0]['title']; ?></h5>
 				<?php if ( !empty( $icons[0]['content'] ) ) { ?><p><?php print $icons[0]['content']; ?></p><?php } ?>
 			</a>
@@ -116,7 +116,7 @@ function the_icon_showcase() {
 		if ( !empty( $icons[1]['image'] ) && !empty( $icons[1]['title'] ) ) { ?>
 		<div class="quarter">
 			<a href="<?php print $icons[1]['link']; ?>">
-				<img src="<?php print $icons[1]['image']; ?>" style="max-width: 120px">
+				<img src="<?php print $icons[1]['image']; ?>" style="max-width: 140px">
 				<h5><?php print $icons[1]['title']; ?></h5>
 				<?php if ( !empty( $icons[1]['content'] ) ) { ?><p><?php print $icons[1]['content']; ?></p><?php } ?>
 			</a>
@@ -126,7 +126,7 @@ function the_icon_showcase() {
 		if ( !empty( $icons[2]['image'] ) && !empty( $icons[2]['title'] ) ) { ?>
 		<div class="quarter">
 			<a href="<?php print $icons[2]['link']; ?>">
-				<img src="<?php print $icons[2]['image']; ?>" style="max-width: 120px">
+				<img src="<?php print $icons[2]['image']; ?>" style="max-width: 140px">
 				<h5><?php print $icons[2]['title']; ?></h5>
 				<?php if ( !empty( $icons[2]['content'] ) ) { ?><p><?php print $icons[2]['content']; ?></p><?php } ?>
 			</a>
@@ -136,7 +136,7 @@ function the_icon_showcase() {
 		if ( !empty( $icons[3]['image'] ) && !empty( $icons[3]['title'] ) ) { ?>
 		<div class="quarter">
 			<a href="<?php print $icons[3]['link']; ?>">
-				<img src="<?php print $icons[3]['image']; ?>" style="max-width: 120px">
+				<img src="<?php print $icons[3]['image']; ?>" style="max-width: 140px">
 				<h5><?php print $icons[3]['title']; ?></h5>
 				<?php if ( !empty( $icons[3]['content'] ) ) { ?><p><?php print $icons[3]['content']; ?></p><?php } ?>
 			</a>
