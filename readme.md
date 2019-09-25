@@ -1,3 +1,3 @@
-## Front Royal FCU's WordPress Theme
+## Apostrophe Marketing's WordPress Theme
 
-&copy; 2016 Front Royal. All rights reserved.
+&copy; 2019 Apostrophe Marketing. All rights reserved.
